@@ -54,6 +54,13 @@ app.get('/bad',(req,res) => {
         errorMessage: 'Error'
     })
 });
+
+app.get('/projects',(req,res) => {
+    res.render('projects', {
+        title: 'Projects',
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
